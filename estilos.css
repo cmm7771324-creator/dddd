@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+.telefono {
+    width: 390px;
+    height: 844px;
+    background-image: url("fondo1.jpeg"); /* imagen completa */
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Logo esquina */
+.logo-esquina {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 62px;
+    opacity: 0.85;
+    /* Sin animación CSS porque el GIF ya se mueve */
+}
+
+
+/* Contador sobre el "4" */
+.contador {
+    position: absolute;
+    bottom: 139.4px;   /* AJUSTA */
+    left: 64%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Botón alineado al texto de la imagen */
+.btn-about {
+    position: absolute;
+    bottom: 60px;   /* AJUSTA */
+    left: 48%;
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 12px;
+    background: rgba(0,0,0,0.95);
+    color: white;
+    border: none;
+    border-radius: 19px;
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;       /* más gruesa que normal */
+    font-size: 14px;        /* ajusta según tu gusto */
+    letter-spacing: .5px; 
+    cursor: pointer;
+     
+}
+
+/* Animación sutil del logo */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
